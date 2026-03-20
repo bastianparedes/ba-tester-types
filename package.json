@@ -1,0 +1,29 @@
+{
+  "devDependencies": {
+    "@biomejs/biome": "^2.3.11",
+    "typescript": "^5.9.3"
+  },
+  "exports": {
+    "./*": {
+      "types": "./dist/*.d.ts"
+    },
+    "./api/*": {
+      "types": "./dist/api/*.d.ts"
+    }
+  },
+  "name": "@ba-tester/types",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bastianparedes/ba-tester-types"
+  },
+  "scripts": {
+    "build": "tsc",
+    "lint": "biome check",
+    "lint:fix": "biome check --write",
+    "test": "Echo No test needed"
+  },
+  "version": "1.0.0"
+}
